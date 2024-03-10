@@ -1,0 +1,385 @@
+ /*import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  /* background: #50da75; */
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)) , url(image/dash-bag2.jpg); */
+  /* background: lightgreen; */
+  background-image: url(image/bag.jpg);
+  background-size: cover;
+  background-position: center;
+  /* backdrop-filter: blur(2px); */
+}
+.container{
+  display: flex;
+}
+nav{
+  position: relative;
+  top: 0;   
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: rgba(53, 174, 53, 0.358);
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(171, 199, 58, 0.5);
+  /* background: transparent; */
+  backdrop-filter: blur(9px);
+  border: 2px solid rgb(29, 172, 31);
+}
+nav ul li span{
+    color: #fff;
+    font-size: 1rem;
+}
+nav i{
+    color: #fff;
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+ .box a{
+  position: relative;
+  text-decoration: none;
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 8px;
+  color: #fff;
+} 
+/* nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+} */
+
+/* Main Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+  color: #fff;
+}
+
+.main-top h1{
+  /* font-size: 2rem; */
+  font-size: 50px;
+  background: -webkit-linear-gradient(rgba(12, 241, 23, 0.881), rgb(8, 212, 239));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-top i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+.main-skills{
+  display: flex;
+  margin-top: 20px;
+  /* background: #fff; */
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .9);
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  border:3px solid #000;
+  background: transparent;
+}
+.main-skills .card{
+  width: 25%;
+  margin: 10px;
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bfbb 19%, #57c5e1c7 42%, #b49fda 79%, #7ac5d8bd 100%);
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+}
+.main-skills .card h3{
+  margin: 10px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.main-skills .card p{
+  font-size: 12px;
+  color: #fff;
+}
+.main-skills .card button{
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.main-skills .card button:hover{
+  /* background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); */
+  transition: 0.4s ease;
+  scale: 0.9;
+}
+.main-skills .card i{
+  font-size: 22px;
+  padding: 10px;
+}
+
+/* Courses */
+.main-course{
+  margin-top:0px ;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 5rem 3rem;
+}
+
+.main-course h1{
+  font-size: 50px;
+  /* background: -webkit-linear-gradient(rgba(12, 241, 23, 0.881), rgb(8, 212, 239));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  
+  text-align: center; 
+  color:rgb(241, 6, 198);
+  margin-bottom: 3rem;
+}
+
+.course{
+  margin-top: 3rem;
+  
+}
+.course-box{
+  width: 100%;
+  height: 28rem;
+  padding: 10px 10px 30px 10px;
+  margin-top: 10px;
+  background: transparent;
+  border-radius: 10px;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .9);
+  border: 2px solid black;
+}
+.course-box ul{
+  list-style: none;
+  display: flex;
+}
+.course-box ul li{
+  margin: 10px;
+  color: rgb(14, 13, 13);
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-right: 50rem;
+}
+.course-box ul li:hover{
+  font-weight: 600;
+}
+.course-box ul .active{
+  color: #fff;
+  border-bottom: 1px solid #f9f9f9;
+}
+.course-box .course{
+  display: flex;
+}
+.box{
+  width: 40%;
+  padding: 10px;
+  height: 268px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.box1{
+  background-image: url(quiz-1.jpg);
+  background-position: center;
+ 
+}
+.box2{
+  background-image: url(card-2.jpg);
+  background-position: center;
+ 
+}
+.box3{
+  background-image: url(listen-1.jpg);
+  background-position: center;
+ 
+}
+/* ********************************* */
+.image-container {
+      display: flex;
+    }
+
+    .image-box {
+      text-align: center;
+      margin: 0 15px; /* Adjust as needed for spacing between images */
+    }
+
+    .image-box img {
+      width: 100%; /* Ensures the image takes up the full width of its container */
+      border-radius: 10px; /* Adjust as needed for rounded corners */
+    }
+    .start-button {
+      margin-top: 10px; /* Adjust as needed for spacing between image and button */
+    }
+  /* *********************************** */
+
+
+.box p{
+  font-size: 18px;
+  
+  color: #0e0e0e;
+ 
+}
+.box button{
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 18rem;
+  cursor: pointer;
+  margin-left: 10rem;
+  background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+.box button:hover{
+  transition: 0.4s ease;
+  scale: 0.9;
+}
+
+.box button a{
+  font-size: 20px;
+  font-weight: 600;
+}
+.box i{
+  font-size: 7rem;
+  float: right;
+  margin: -20px 20px 20px 0;
+}
+.html{
+  color: rgb(25, 94, 54);
+}
+.css{
+  color: rgb(104, 179, 35);
+}
+.js{
+  color: rgb(28, 98, 179);
+}
+
+.next-btn {
+  font-size: 2rem;
+  padding: 20px;
+  margin-left: 47%;
+  border: 2px solid #000; 
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  color: #050505; 
+  text-align: center; 
+  cursor: pointer; 
+  border-radius: 10px; /* You can adjust the value to control the roundness */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
+}
+
+.next-btn:hover {
+  background-color: #fff; /* Change to the background color you want on hover */
+  color: #000; /* Change to the text color you want on hover */
+  transform: scale(1.05); /* Adjust the scale factor as needed */
+  font-size: 1.2em; /* Adjust the font size on hover */
+}
+
+
+.back-button {
+  position: fixed;
+  top: 30px;
+  left: 50px;
+  padding: 10px; 
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 4px 0px 0px #e184f3;
+background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+background-color:#c123de;
+border-radius:5px;
+border:1px solid #a511c0;
+  font-size:17px;
+font-weight:bold;
+padding:12px 44px;
+text-decoration:none;
+text-shadow:0px 1px 0px #9b14b3;
+}
+
+.back-button a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0 2px;
+}
+
+.back-button:hover{
+  background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+background-color:#a20dbd;
+}
+  
+.next-button {
+  position: fixed;
+  top: 30px;
+  right: 50px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 4px 0px 0px #54a3f7;
+background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+background-color:#007dc1;
+border-radius:5px;
+border:1px solid #124d77;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:17px;
+font-weight:bold;
+padding:12px 44px;
+text-decoration:none;
+text-shadow:0px 1px 0px #154682;
+}
+
+.next-button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.next-button:hover{
+  background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+background-color:#0061a7;
+}
